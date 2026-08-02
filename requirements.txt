@@ -1,0 +1,4 @@
+# PTX runtime dependencies (Python 3.13+)
+rich>=13.7           # Tables, panels, colored output, Unicode
+prompt_toolkit>=3.0  # Interactive prompt: history, completion, key bindings
+PyYAML>=6.0          # Loading the YAML tool database
