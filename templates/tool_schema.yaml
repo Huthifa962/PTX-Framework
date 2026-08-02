@@ -1,0 +1,53 @@
+# =============================================================================
+# PTX Tool Schema
+# =============================================================================
+# Copy this file into the correct database/<path>/ folder, rename it to
+# <tool>.yaml, and fill in the fields. PTX loads every *.yaml / *.yml file in a
+# path folder automatically -- no code changes required.
+#
+# Only `name`, `binary`, `package`, `description`, and `phases` are strictly
+# needed for a tool to appear; everything else enriches info/examples/cheatsheet.
+# =============================================================================
+
+name: ""                 # Display name, e.g. "nmap"
+binary: ""               # Executable used for install-detection, e.g. "nmap"
+package: ""              # Package name, e.g. "nmap"
+description: ""          # One-line summary shown in tables
+purpose: ""             # Longer "why you use it" sentence for `info`
+category: ""             # Functional category, e.g. "Scanner"
+difficulty: "Easy"       # Easy | Medium | Hard
+platform: "Linux"        # Linux | Windows | macOS | Cross-platform
+
+# Which roadmap phase(s) this tool belongs to. Must match phase names/slugs in
+# workflows.json for this path. A tool may belong to several phases.
+phases:
+  - "Reconnaissance"
+
+# Alternate names / keywords the search engine should match.
+aliases: []
+
+# Install commands per package manager. PTX picks the first available one.
+# Supported keys: apt, brew, snap, pip, pipx, go, cargo, git
+# Optionally add a "<manager>_update" key for a dedicated update command.
+installation:
+  apt: "sudo apt install -y <package>"
+
+# Reference links
+website: ""
+documentation: ""
+license: ""
+author: ""
+
+# Professional examples shown by the `examples` command.
+examples:
+  - title: "Basic usage"
+    command: "<binary> --help"
+    note: "Optional explanation of the command."
+
+# Quick reference shown by the `cheatsheet` command.
+cheatsheet:
+  - title: "Show version"
+    command: "<binary> --version"
+
+# Related tools (display names) shown in `info`.
+related_tools: []
