@@ -1,0 +1,146 @@
+[
+  {
+    "name": "Core Toolkit",
+    "folder": "core_toolkit",
+    "group": "Cross-cutting",
+    "description": "Multi-purpose tools used across almost every engagement."
+  },
+  {
+    "name": "Reporting",
+    "folder": "reporting",
+    "group": "Cross-cutting",
+    "description": "Turn findings into professional, scored deliverables."
+  },
+  {
+    "name": "Network Penetration Testing",
+    "folder": "network",
+    "group": "Core",
+    "description": "External and internal infrastructure — the baseline engagement."
+  },
+  {
+    "name": "Web Application",
+    "folder": "web",
+    "group": "Core",
+    "description": "OWASP Top 10 territory — the highest-volume testing work."
+  },
+  {
+    "name": "Wireless",
+    "folder": "wireless",
+    "group": "Core",
+    "description": "Wi-Fi, Bluetooth, and general RF assessment."
+  },
+  {
+    "name": "Social Engineering & Physical",
+    "folder": "social_engineering",
+    "group": "Core",
+    "description": "Phishing, pretexting, and physical-access testing."
+  },
+  {
+    "name": "API",
+    "folder": "api",
+    "group": "Application",
+    "description": "REST / GraphQL / gRPC testing — its own OWASP Top 10."
+  },
+  {
+    "name": "Mobile (Android & iOS)",
+    "folder": "mobile",
+    "group": "Application",
+    "description": "Static + runtime app testing; the backend API is where impact lands."
+  },
+  {
+    "name": "Thick Client / Desktop",
+    "folder": "thick_client",
+    "group": "Application",
+    "description": ".NET / Java / Electron desktop apps — binary + traffic analysis."
+  },
+  {
+    "name": "Source Code Review",
+    "folder": "source_review",
+    "group": "Application",
+    "description": "White-box review — reading for flaws, not attacking a live target."
+  },
+  {
+    "name": "Active Directory",
+    "folder": "active_directory",
+    "group": "Infrastructure",
+    "description": "Windows domain testing — deep enough to be a career in itself."
+  },
+  {
+    "name": "Cloud",
+    "folder": "cloud",
+    "group": "Infrastructure",
+    "description": "AWS / Azure / GCP — IAM, misconfig, and cross-service privesc."
+  },
+  {
+    "name": "Container & Kubernetes",
+    "folder": "containers",
+    "group": "Infrastructure",
+    "description": "Container escapes, RBAC misconfig, and image supply-chain."
+  },
+  {
+    "name": "Red Team",
+    "folder": "red_team",
+    "group": "Infrastructure",
+    "description": "Objective-based, stealthy, full-scope — adds C2 + evasion."
+  },
+  {
+    "name": "Purple Team",
+    "folder": "purple_team",
+    "group": "Infrastructure",
+    "description": "Collaborative offense + defense to tune detection."
+  },
+  {
+    "name": "IoT / Embedded",
+    "folder": "iot",
+    "group": "Hardware",
+    "description": "Firmware extraction, hardware interfaces, and device backends."
+  },
+  {
+    "name": "ICS / SCADA / OT",
+    "folder": "ics_scada",
+    "group": "Hardware",
+    "description": "Industrial control — safety and availability over confidentiality."
+  },
+  {
+    "name": "Automotive",
+    "folder": "automotive",
+    "group": "Hardware",
+    "description": "CAN bus, ECUs, and telematics."
+  },
+  {
+    "name": "Hardware / RFID",
+    "folder": "hardware_rfid",
+    "group": "Hardware",
+    "description": "Card cloning, side-channel, and fault injection (niche)."
+  },
+  {
+    "name": "AI / LLM Security",
+    "folder": "ai_llm",
+    "group": "Emerging",
+    "description": "Prompt injection, jailbreaks, model/agent abuse (OWASP LLM Top 10)."
+  },
+  {
+    "name": "Cloud-native / Serverless",
+    "folder": "cloud_native",
+    "group": "Emerging",
+    "description": "Lambda/Functions abuse, event injection, IaC misconfig."
+  },
+  {
+    "name": "CI/CD & Supply Chain",
+    "folder": "cicd_supply_chain",
+    "group": "Emerging",
+    "description": "Pipeline poisoning, dependency confusion, secrets in builds."
+  },
+  {
+    "name": "Blockchain / Smart Contracts",
+    "folder": "blockchain",
+    "group": "Emerging",
+    "description": "Solidity auditing, reentrancy, and DeFi logic flaws."
+  },
+  {
+    "name": "5G / Telecom",
+    "folder": "telecom_5g",
+    "group": "Emerging",
+    "description": "Core network and signaling-protocol abuse (specialized)."
+  }
+]

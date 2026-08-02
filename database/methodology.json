@@ -1,0 +1,34 @@
+[
+  {
+    "name": "Pre-engagement",
+    "description": "Scope, rules of engagement, authorization, goals."
+  },
+  {
+    "name": "Reconnaissance",
+    "description": "Passive (OSINT, no touch) then active discovery."
+  },
+  {
+    "name": "Scanning & Enumeration",
+    "description": "Map services, versions, users, attack surface."
+  },
+  {
+    "name": "Vulnerability Analysis",
+    "description": "Match findings to known weaknesses."
+  },
+  {
+    "name": "Exploitation / Initial Access",
+    "description": "Gain the first foothold."
+  },
+  {
+    "name": "Post-Exploitation",
+    "description": "Privilege escalation, lateral movement, persistence."
+  },
+  {
+    "name": "Impact / Objectives",
+    "description": "Prove business impact (data, domain admin, etc.)."
+  },
+  {
+    "name": "Reporting & Remediation",
+    "description": "The deliverable that actually pays."
+  }
+]

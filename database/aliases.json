@@ -1,0 +1,18 @@
+{
+  "recon": "reconnaissance",
+  "enum": "enumeration",
+  "privesc": "privilege-escalation",
+  "vuln": "vulnerability-assessment",
+  "net": "network-penetration-testing",
+  "web": "web-application",
+  "ad": "active-directory",
+  "core": "core-toolkit",
+  "k8s": "container-kubernetes",
+  "llm": "ai-llm-security",
+  "ai": "ai-llm-security",
+  "red": "red-team",
+  "purple": "purple-team",
+  "cloud": "cloud",
+  "wifi": "wireless",
+  "se": "social-engineering-physical"
+}

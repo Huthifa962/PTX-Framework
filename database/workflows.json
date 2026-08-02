@@ -1,0 +1,442 @@
+{
+  "core-toolkit": [
+    {
+      "name": "Recon & OSINT",
+      "description": "Footprinting and open-source collection glue."
+    },
+    {
+      "name": "Scanning",
+      "description": "Host, port, and service discovery."
+    },
+    {
+      "name": "Interception",
+      "description": "Proxies for manual web/API testing."
+    },
+    {
+      "name": "Exploitation Frameworks",
+      "description": "Broad multi-purpose offensive frameworks."
+    },
+    {
+      "name": "Password Attacks",
+      "description": "Cracking, spraying, and credential reuse."
+    },
+    {
+      "name": "Discovery & Wordlists",
+      "description": "Content discovery and fuzzing lists."
+    },
+    {
+      "name": "Pivoting & Shells",
+      "description": "Tunnels, relays, and shell handling."
+    },
+    {
+      "name": "Notes & Reporting",
+      "description": "Evidence capture and deliverables."
+    }
+  ],
+  "reporting": [
+    {
+      "name": "Collection",
+      "description": "Gather evidence and findings."
+    },
+    {
+      "name": "Scoring",
+      "description": "Rate severity (e.g. CVSS)."
+    },
+    {
+      "name": "Writing",
+      "description": "Draft technical + executive content."
+    },
+    {
+      "name": "Delivery",
+      "description": "Produce and hand over the report."
+    }
+  ],
+  "network-penetration-testing": [
+    {
+      "name": "Reconnaissance",
+      "description": "Passive discovery of hosts and scope."
+    },
+    {
+      "name": "Enumeration",
+      "description": "Service, share, and user enumeration."
+    },
+    {
+      "name": "Vulnerability Scanning",
+      "description": "Identify weaknesses in scope."
+    },
+    {
+      "name": "Exploitation",
+      "description": "Gain a controlled foothold."
+    },
+    {
+      "name": "Password & Spray",
+      "description": "Credential attacks and reuse."
+    },
+    {
+      "name": "Pivoting",
+      "description": "Reach deeper network segments."
+    },
+    {
+      "name": "Traffic",
+      "description": "Capture and poison network traffic."
+    }
+  ],
+  "web-application": [
+    {
+      "name": "Recon & Discovery",
+      "description": "Subdomains, fingerprinting, content discovery."
+    },
+    {
+      "name": "Proxy & Manual",
+      "description": "Intercepting proxies for manual testing."
+    },
+    {
+      "name": "Scanning",
+      "description": "Automated web vulnerability scanning."
+    },
+    {
+      "name": "Injection",
+      "description": "Injection-class flaws (SQLi, XSS, SSTI, cmd)."
+    },
+    {
+      "name": "Auth & JWT",
+      "description": "Token handling and authentication testing."
+    },
+    {
+      "name": "CMS",
+      "description": "CMS/framework-specific scanners."
+    }
+  ],
+  "wireless": [
+    {
+      "name": "Reconnaissance",
+      "description": "Passive capture and network/client discovery."
+    },
+    {
+      "name": "Attacks",
+      "description": "Handshake capture, deauth, evil twin."
+    },
+    {
+      "name": "Cracking",
+      "description": "Recover keys from captures."
+    },
+    {
+      "name": "Bluetooth",
+      "description": "BLE / classic Bluetooth assessment."
+    },
+    {
+      "name": "SDR & RF",
+      "description": "Software-defined radio and general RF."
+    }
+  ],
+  "social-engineering-physical": [
+    {
+      "name": "Recon",
+      "description": "OSINT on people, org chart, and layout."
+    },
+    {
+      "name": "Phishing Infrastructure",
+      "description": "Stand up phishing / capture infrastructure."
+    },
+    {
+      "name": "Payloads",
+      "description": "Payload generation for authorized campaigns."
+    },
+    {
+      "name": "Physical",
+      "description": "Badge, RFID, and drop-device tooling."
+    }
+  ],
+  "api": [
+    {
+      "name": "Discovery",
+      "description": "Find endpoints, schemas, and docs."
+    },
+    {
+      "name": "Enumeration",
+      "description": "Map methods, params, and auth."
+    },
+    {
+      "name": "Vulnerability Assessment",
+      "description": "BOLA, broken auth, mass assignment."
+    },
+    {
+      "name": "GraphQL",
+      "description": "GraphQL-specific tooling."
+    },
+    {
+      "name": "gRPC",
+      "description": "gRPC-specific tooling."
+    },
+    {
+      "name": "Auth & Token",
+      "description": "JWT/OAuth token testing."
+    }
+  ],
+  "mobile-android-ios": [
+    {
+      "name": "Static Analysis",
+      "description": "Decompile and read the package."
+    },
+    {
+      "name": "Dynamic Analysis",
+      "description": "Runtime instrumentation and hooking."
+    },
+    {
+      "name": "Traffic & Pinning",
+      "description": "Intercept traffic, bypass SSL pinning."
+    },
+    {
+      "name": "Recon & Storage",
+      "description": "Components, deep links, local storage."
+    }
+  ],
+  "thick-client-desktop": [
+    {
+      "name": "Traffic",
+      "description": "Intercept desktop app traffic."
+    },
+    {
+      "name": "Binary Analysis",
+      "description": "Disassemble and decompile binaries."
+    },
+    {
+      "name": "Runtime",
+      "description": "Hook and observe at runtime."
+    },
+    {
+      "name": ".NET",
+      "description": ".NET-specific decompilation and patching."
+    }
+  ],
+  "source-code-review": [
+    {
+      "name": "Static Analysis (SAST)",
+      "description": "Automated and manual code scanning."
+    },
+    {
+      "name": "Secrets",
+      "description": "Find hardcoded secrets in code/history."
+    },
+    {
+      "name": "Dependency (SCA)",
+      "description": "Vulnerable and confused dependencies."
+    }
+  ],
+  "active-directory": [
+    {
+      "name": "Mapping & Recon",
+      "description": "Collect and map the AD attack graph."
+    },
+    {
+      "name": "Enumeration",
+      "description": "Users, groups, SPNs, ACLs, ADCS templates."
+    },
+    {
+      "name": "Initial Access",
+      "description": "Spray, poison, relay for a first foothold."
+    },
+    {
+      "name": "Privilege Escalation",
+      "description": "Kerberos, delegation, DCSync, ADCS paths."
+    },
+    {
+      "name": "Lateral Movement",
+      "description": "Move across hosts in the domain."
+    },
+    {
+      "name": "Impact",
+      "description": "Domain/Enterprise Admin objectives."
+    }
+  ],
+  "cloud": [
+    {
+      "name": "Reconnaissance",
+      "description": "Public assets, buckets, leaked keys."
+    },
+    {
+      "name": "Enumeration",
+      "description": "IAM roles, policies, service inventory."
+    },
+    {
+      "name": "Configuration Assessment",
+      "description": "Audit posture and misconfigurations."
+    },
+    {
+      "name": "Exploitation",
+      "description": "Validate access and privilege issues."
+    },
+    {
+      "name": "Privilege Escalation",
+      "description": "Chain IAM weaknesses."
+    }
+  ],
+  "container-kubernetes": [
+    {
+      "name": "Recon & Audit",
+      "description": "Exposed APIs, dashboards, registries."
+    },
+    {
+      "name": "Enumeration",
+      "description": "RBAC, service accounts, secrets."
+    },
+    {
+      "name": "Attack & Escape",
+      "description": "Container/node breakout."
+    },
+    {
+      "name": "Image Scanning",
+      "description": "Vulnerabilities in images."
+    },
+    {
+      "name": "Secrets",
+      "description": "Secret discovery."
+    }
+  ],
+  "red-team": [
+    {
+      "name": "C2",
+      "description": "Command-and-control frameworks."
+    },
+    {
+      "name": "Payload & Evasion",
+      "description": "Payload generation and defensive evasion."
+    },
+    {
+      "name": "Recon (OPSEC-safe)",
+      "description": "Low-noise reconnaissance."
+    },
+    {
+      "name": "Persistence & Lateral",
+      "description": "Durable access and movement."
+    }
+  ],
+  "purple-team": [
+    {
+      "name": "Emulation",
+      "description": "Emulate adversary techniques safely."
+    },
+    {
+      "name": "Detection Engineering",
+      "description": "Author and test detections."
+    },
+    {
+      "name": "Collaboration",
+      "description": "Coordinate and track coverage."
+    }
+  ],
+  "iot-embedded": [
+    {
+      "name": "Firmware",
+      "description": "Extract and unpack firmware."
+    },
+    {
+      "name": "Analysis",
+      "description": "Analyze binaries and filesystems."
+    },
+    {
+      "name": "Hardware Interfaces",
+      "description": "UART / JTAG / SPI access."
+    },
+    {
+      "name": "Secrets",
+      "description": "Hunt for hardcoded secrets."
+    }
+  ],
+  "ics-scada-ot": [
+    {
+      "name": "Discovery (Passive)",
+      "description": "Passive mapping — no active scanning on production."
+    },
+    {
+      "name": "Protocol Tools",
+      "description": "Modbus / DNP3 / S7 tooling."
+    },
+    {
+      "name": "Traffic",
+      "description": "Protocol dissection."
+    }
+  ],
+  "automotive": [
+    {
+      "name": "CAN Bus",
+      "description": "Interact with the CAN network."
+    },
+    {
+      "name": "ECU & Diagnostics",
+      "description": "ECU and diagnostic protocols."
+    }
+  ],
+  "hardware-rfid": [
+    {
+      "name": "RFID & NFC",
+      "description": "Read, emulate, and clone cards."
+    },
+    {
+      "name": "Side-channel & Fault",
+      "description": "Glitching and side-channel analysis."
+    }
+  ],
+  "ai-llm-security": [
+    {
+      "name": "Recon",
+      "description": "Map model usage, prompts, tools, and RAG sources."
+    },
+    {
+      "name": "Testing Frameworks",
+      "description": "Automated LLM vulnerability scanning."
+    },
+    {
+      "name": "Adversarial",
+      "description": "Prompt-injection and jailbreak evaluation."
+    }
+  ],
+  "cloud-native-serverless": [
+    {
+      "name": "Recon",
+      "description": "Enumerate functions and event sources."
+    },
+    {
+      "name": "IaC Misconfig",
+      "description": "Terraform / CloudFormation posture."
+    },
+    {
+      "name": "Function Abuse",
+      "description": "Over-permissioned roles and injection."
+    }
+  ],
+  "ci-cd-supply-chain": [
+    {
+      "name": "Secrets",
+      "description": "Secrets in repos, logs, and build systems."
+    },
+    {
+      "name": "Pipeline & Audit",
+      "description": "Audit pipelines and runners."
+    },
+    {
+      "name": "Dependency",
+      "description": "Dependency and artifact integrity."
+    }
+  ],
+  "blockchain-smart-contracts": [
+    {
+      "name": "Static Analysis",
+      "description": "Analyze contract source/bytecode."
+    },
+    {
+      "name": "Symbolic & Dynamic",
+      "description": "Symbolic execution and fuzzing."
+    }
+  ],
+  "5g-telecom": [
+    {
+      "name": "Signaling",
+      "description": "SS7 / Diameter / GTP analysis."
+    },
+    {
+      "name": "Core & RAN",
+      "description": "Core-network and radio tooling."
+    }
+  ]
+}
