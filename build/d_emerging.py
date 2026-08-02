@@ -1,0 +1,140 @@
+"""Emerging domains: AI/LLM, Cloud-native/Serverless, CI/CD, Blockchain, 5G."""
+from taxonomy import T, ph, register
+
+register({
+    "name": "AI / LLM Security",
+    "group": "Emerging",
+    "folder": "ai_llm",
+    "description": "Prompt injection, jailbreaks, model/agent abuse (OWASP LLM Top 10).",
+    "phases": [
+        ph("Recon", "Map model usage, prompts, tools, and RAG sources."),
+        ph("Testing Frameworks", "Automated LLM vulnerability scanning."),
+        ph("Adversarial", "Prompt-injection and jailbreak evaluation."),
+    ],
+    "tools": [
+        T("garak", "LLM vulnerability scanner.",
+          ["Testing Frameworks"], cat="Scanner", diff="Medium", star=True, plat="Cross-platform",
+          pipx=True, pip=True, web="https://github.com/NVIDIA/garak"),
+        T("PyRIT", "Python Risk Identification Toolkit for generative AI.",
+          ["Testing Frameworks", "Adversarial"], cat="Framework", diff="Medium",
+          plat="Cross-platform", pip=True, binary="pyrit",
+          web="https://github.com/Azure/PyRIT"),
+        T("promptfoo", "Test and evaluate LLM app prompts and defenses.",
+          ["Testing Frameworks"], cat="Framework", diff="Easy", plat="Cross-platform",
+          binary="promptfoo", web="https://github.com/promptfoo/promptfoo"),
+        T("giskard", "Testing framework for ML/LLM systems.",
+          ["Testing Frameworks"], cat="Framework", diff="Easy", plat="Cross-platform",
+          pip=True, binary="giskard", web="https://github.com/Giskard-AI/giskard"),
+        T("LLM Guard", "Security toolkit for LLM interactions (test bypasses).",
+          ["Adversarial"], cat="Defense", diff="Easy", plat="Cross-platform", pip=True,
+          binary="llm-guard", web="https://github.com/protectai/llm-guard"),
+    ],
+})
+
+register({
+    "name": "Cloud-native / Serverless",
+    "group": "Emerging",
+    "folder": "cloud_native",
+    "description": "Lambda/Functions abuse, event injection, IaC misconfig.",
+    "phases": [
+        ph("Recon", "Enumerate functions and event sources."),
+        ph("IaC Misconfig", "Terraform / CloudFormation posture."),
+        ph("Function Abuse", "Over-permissioned roles and injection."),
+    ],
+    "tools": [
+        T("checkov", "Static analysis for IaC (Terraform, CFN, K8s).",
+          ["IaC Misconfig"], cat="IaC", diff="Easy", star=True, pipx=True, pip=True,
+          web="https://github.com/bridgecrewio/checkov"),
+        T("tfsec", "Security scanner for Terraform.",
+          ["IaC Misconfig"], cat="IaC", diff="Easy", binary="tfsec",
+          go="github.com/aquasecurity/tfsec/cmd/tfsec@latest",
+          web="https://github.com/aquasecurity/tfsec"),
+        T("KICS", "Find security issues in IaC at scale.",
+          ["IaC Misconfig"], cat="IaC", diff="Easy", binary="kics",
+          web="https://github.com/Checkmarx/kics"),
+        T("Prowler", "Assess serverless/cloud posture.",
+          ["Recon", "Function Abuse"], cat="Audit", diff="Easy", pipx=True, pip=True,
+          web="https://github.com/prowler-cloud/prowler"),
+    ],
+})
+
+register({
+    "name": "CI/CD & Supply Chain",
+    "group": "Emerging",
+    "folder": "cicd_supply_chain",
+    "description": "Pipeline poisoning, dependency confusion, secrets in builds.",
+    "phases": [
+        ph("Secrets", "Secrets in repos, logs, and build systems."),
+        ph("Pipeline & Audit", "Audit pipelines and runners."),
+        ph("Dependency", "Dependency and artifact integrity."),
+    ],
+    "tools": [
+        T("trufflehog", "Find leaked secrets across code and history.",
+          ["Secrets"], cat="Secrets", diff="Easy", star=True,
+          go="github.com/trufflesecurity/trufflehog/v3@latest",
+          web="https://github.com/trufflesecurity/trufflehog"),
+        T("gitleaks", "Detect secrets in git repos.",
+          ["Secrets"], cat="Secrets", diff="Easy", star=True, apt=True,
+          web="https://github.com/gitleaks/gitleaks"),
+        T("Gato", "GitHub Actions attack and enumeration toolkit.",
+          ["Pipeline & Audit"], cat="Pipeline", diff="Medium", binary="gato", pipx=True, pip=True,
+          web="https://github.com/praetorian-inc/gato",
+          note="Authorized repositories/orgs only."),
+        T("Legitify", "Detect misconfigurations in GitHub/GitLab.",
+          ["Pipeline & Audit"], cat="Pipeline", diff="Easy", binary="legitify",
+          web="https://github.com/Legit-Labs/legitify"),
+        T("Semgrep", "SAST for pipeline and application code.",
+          ["Pipeline & Audit"], cat="SAST", diff="Easy", pipx=True, pip=True,
+          web="https://semgrep.dev"),
+        T("OSV-Scanner", "Scan dependencies against the OSV database.",
+          ["Dependency"], cat="SCA", diff="Easy",
+          go="github.com/google/osv-scanner/cmd/osv-scanner@latest",
+          web="https://github.com/google/osv-scanner"),
+    ],
+})
+
+register({
+    "name": "Blockchain / Smart Contracts",
+    "group": "Emerging",
+    "folder": "blockchain",
+    "description": "Solidity auditing, reentrancy, and DeFi logic flaws.",
+    "phases": [
+        ph("Static Analysis", "Analyze contract source/bytecode."),
+        ph("Symbolic & Dynamic", "Symbolic execution and fuzzing."),
+    ],
+    "tools": [
+        T("Slither", "Static analysis framework for Solidity.",
+          ["Static Analysis"], cat="Static", diff="Medium", star=True, plat="Cross-platform",
+          pipx=True, pip="pip install slither-analyzer", binary="slither",
+          web="https://github.com/crytic/slither"),
+        T("Mythril", "Security analysis of EVM bytecode.",
+          ["Symbolic & Dynamic"], cat="Symbolic", diff="Hard", plat="Cross-platform",
+          pipx=True, pip="pip install mythril", binary="myth",
+          web="https://github.com/Consensys/mythril"),
+        T("Echidna", "Property-based fuzzer for Ethereum contracts.",
+          ["Symbolic & Dynamic"], cat="Fuzzing", diff="Hard", binary="echidna",
+          web="https://github.com/crytic/echidna"),
+    ],
+})
+
+register({
+    "name": "5G / Telecom",
+    "group": "Emerging",
+    "folder": "telecom_5g",
+    "description": "Core network and signaling-protocol abuse (specialized).",
+    "phases": [
+        ph("Signaling", "SS7 / Diameter / GTP analysis."),
+        ph("Core & RAN", "Core-network and radio tooling."),
+    ],
+    "tools": [
+        T("Wireshark", "Dissect telecom signaling protocols.",
+          ["Signaling"], cat="Traffic", diff="Medium", plat="Cross-platform", apt=True,
+          web="https://www.wireshark.org"),
+        T("srsRAN", "Open-source 4G/5G software radio suite.",
+          ["Core & RAN"], cat="RAN", diff="Hard", binary="srsran",
+          web="https://github.com/srsran/srsRAN_Project"),
+        T("Open5GS", "Open-source 5G/EPC core-network implementation.",
+          ["Core & RAN"], cat="Core", diff="Hard", binary="open5gs",
+          web="https://open5gs.org"),
+    ],
+})
